@@ -1,19 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Ash"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+    <View
+        android:id="@+id/login_desing"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/page_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/outfit_medium"
+        android:text="ManageX"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/managePos"
+            android:layout_width="0dp"
+            android:layout_height="200sp"
+            android:layout_margin="30sp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewAdminPortal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="Admin Portal"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/manageEmp"
+            android:layout_width="0dp"
+            android:layout_height="200sp"
+            android:layout_margin="30sp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewPOS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="POS"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/managePayroll"
+            android:layout_width="0dp"
+            android:layout_height="200sp"
+            android:layout_margin="30sp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewRegisterTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="Register Time"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/orderHistory"
+            android:layout_width="0dp"
+            android:layout_height="200sp"
+            android:layout_margin="30sp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="Order Hisotry"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

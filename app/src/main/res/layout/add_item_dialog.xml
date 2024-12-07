@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Enter a Item Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/item_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="item name"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/item_disc_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="item description"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/item_price_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="item price"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/item_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button"
+            android:backgroundTint="@color/card_orange"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/item_button_add"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/card_green"
+            android:text="Add" />
+    </LinearLayout>
+
+</LinearLayout>
