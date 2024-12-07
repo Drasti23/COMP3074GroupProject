@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Ash"
+    android:orientation="vertical"
+    tools:context=".AdminPortalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/login_desing"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/page_design"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Admin Portal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="50sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/managePos"
+                    android:layout_width="0dp"
+                    android:layout_height="200sp"
+                    android:layout_margin="30sp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/textViewManagePOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/outfit_medium"
+                        android:gravity="center"
+                        android:text="Manage POS"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/manageEmp"
+                    android:layout_width="0dp"
+                    android:layout_height="200sp"
+                    android:layout_margin="30sp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/textViewManageEmp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/outfit_medium"
+                        android:gravity="center"
+                        android:text="Manage Employees"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonAdminBack"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="40sp"
+                android:backgroundTint="@color/card_green"
+                android:text="Go Back" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

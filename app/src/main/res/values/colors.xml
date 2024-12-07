@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="card_orange">#f48c42</color>
+    <color name="card_blue">#4c8ddf</color>
+    <color name="card_green">#45876c</color>
+    <color name="dark_blue">#264791</color>
+    <color name="light_blue">#728ABF</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="avatarColor">#F1F5FB</color>
+    <color name="avatarOutline">#4D4981</color>
+    <color name="Ash">#CDCDCD</color>
+    <color name="grey">#4A4A4A</color>
 </resources>
