@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/itemNameCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Item Name"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemPriceCart"
+        android:layout_weight="2"
+        android:text="Price"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/decreaseQuantityButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/baseline_indeterminate_check_box_24"
+        android:contentDescription="Decrease Quantity" />
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="8dp" />
+
+    <ImageView
+        android:id="@+id/increaseQuantityButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="Increase Quantity"
+        android:src="@drawable/baseline_add_box_24" />
+
+    <ImageView
+        android:id="@+id/removeItemButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/baseline_delete_24"
+        android:contentDescription="Remove Item"
+        android:layout_marginStart="8dp" />
+</LinearLayout>

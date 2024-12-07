@@ -54,13 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-       /* registerTime.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                RegisterTimeDialog alert = new RegisterTimeDialog();
-                alert.showDialog(MainActivity.this);
-            }
-        });
+//        registerTime.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                RegisterTimeDialog alert = new RegisterTimeDialog();
+//                alert.showDialog(MainActivity.this);
+//            }
+//        });
 
         POS.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +68,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, POSActivity.class);
                 startActivity(i);
             }
-        });*/
+        });
     }
 }
