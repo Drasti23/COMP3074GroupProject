@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import ca.gbc.comp3074groupt22.Dialogs.AdminDialog;
 //import ca.gbc.comp3074groupt22.Dialogs.RegisterTimeDialog;
+import ca.gbc.comp3074groupt22.Dialogs.RegisterTimeDialog;
 import ca.gbc.comp3074groupt22.Order.OrderActivity;
 import ca.gbc.comp3074groupt22.Order.OrderActivity;
 
@@ -54,13 +55,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-//        registerTime.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                RegisterTimeDialog alert = new RegisterTimeDialog();
-//                alert.showDialog(MainActivity.this);
-//            }
-//        });
+      registerTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RegisterTimeDialog alert = new RegisterTimeDialog();
+                alert.showDialog(MainActivity.this);
+            }
+        });
 
         POS.setOnClickListener(new View.OnClickListener() {
             @Override
