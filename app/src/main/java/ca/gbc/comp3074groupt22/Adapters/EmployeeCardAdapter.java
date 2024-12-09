@@ -88,7 +88,7 @@ public class EmployeeCardAdapter extends RecyclerView.Adapter<EmployeeCardAdapte
             textViewItemName = itemView.findViewById(R.id.employeeName);
             textViewDetails = itemView.findViewById(R.id.employeePosition);
             editIcon = itemView.findViewById(R.id.employeeAction);
-           //deleteIcon = itemView.findViewById(R.id.deleteEmployeeIcon);
+           deleteIcon = itemView.findViewById(R.id.deleteEmployeeIcon);
         }
     }
 }

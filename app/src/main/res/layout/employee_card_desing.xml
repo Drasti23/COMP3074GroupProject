@@ -58,5 +58,14 @@
             android:src="@drawable/baseline_edit_square_24"
             android:contentDescription="action icon"
             app:tint="@color/grey" />
+        <ImageView
+            android:id="@+id/deleteEmployeeIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/baseline_delete_24"
+            android:contentDescription="Delete icon"
+            android:layout_marginStart="8dp"
+            app:tint="@color/grey" />
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>
